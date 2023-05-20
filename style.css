@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: consolas;
+}
+
+#cartPic {
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+/* Top Navigation */
+.topnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #f5ebe0;
+    padding: 25px 60px;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.cart{
+    position: relative;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 7px;
+    font: size 30px;
+    border-radius: 6px;
+}
+
+.cartAmount {
+    font-size: 20px;
+    background-color: red;
+    color: #ffffff;
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    padding: 4px;
+    border-radius: 3px;
+}
+
+
+/*shop items*/
+
+.shop {
+    display: grid;
+    grid-template-columns: repeat(4, 225px);
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+/* to make responsive*/
+@media (max-width:1000px) {
+    .shop {
+        grid-template-columns: repeat(2, 225px);
+    }
+}
+
+@media (max-width:500px) {
+    .shop {
+        grid-template-columns: repeat(1, 225px);
+    }
+}
+
+.item {
+    border: 2px solid grey;
+    border-radius: 6px;
+
+}
+
+.item img:not(.minus-icon, .plus-icon) {
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+}
+
+
+.details {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    gap: 10px;
+}
+
+.price-quantity {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    font-size: 25px;
+    margin-top: 3px;
+}
+
+.minus-icon {
+    cursor: pointer;
+    
+}
+
+.plus-icon {
+    cursor: pointer;
+    
+}
+
+/*cart*/
+
+.text-center {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.HomeBtn, .checkout, .clear-all {
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.checkout {
+    background-color: green;
+}
+
+.clear-all {
+    background-color: red;
+}
+
+
+.remove-button {
+    cursor: pointer;
+}
+
+.container {
+    display:grid;
+    grid-template-columns: repeat(1, 320px);
+    justify-content: center;
+    gap: 15px;
+   
+}
+
+.cart-item {
+    border: 3px solid black;
+    border-radius: 10px;
+    display: flex;
+}
+
+.title-price-x {
+    width: 195px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.title-price {
+    display: flex;
+    gap: 15px;
+}
+
+.cart-item-price {
+    background-color: #666666;
+    color: white;
+    border-radius: 4px;
+    padding: 3px 6px;
+}
+
+
+
+/*Modal*/
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }

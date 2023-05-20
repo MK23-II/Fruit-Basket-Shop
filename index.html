@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="slide.css">
+        <title>Shopping Cart</title>
+    </head>
+
+    <body>
+        
+        <!--Top Navigation-->
+        <div class="topnav">
+            <a href="index.html">
+                <h1>Fruit Basket</h1>
+            </a>
+
+            <a href="cart.html">
+                <div class="cart"> 
+                    <img id="cartPic" class="cartPic" src="icons/cart-icon.png" height="30" width="30">
+                    <div id="cartAmount" class="cartAmount">0</div>
+                </div>
+            </a>
+            
+        </div>
+
+        <!--Slideshow of Products-->
+        <div id="productContainer" class="slideshowContainer fade">
+            <div class="productSlides">
+                <img src="slideshow/apples.jpg" style="width:50%">
+                <div class="slideText">Apples</div>
+            </div>
+
+            <div class="productSlides fade">
+                <img src="slideshow/mangoes.jpg" style="width:50%">
+                <div class="slideText">Mangoes</div>
+            </div>
+
+            <div class="productSlides fade">
+                <img src="slideshow/bananas.jpg" style="width:50%">
+                <div class="slideText">Bananas</div>
+            </div>
+
+            <div class="productSlides fade">
+                <img src="slideshow/avocados.jpg" style="width:50%">
+                <div class="slideText">Avocados</div>
+            </div>
+
+            <div class="productSlides fade">
+                <img src="slideshow/watermelons.jpg" style="width:50%">
+                <div class="slideText">Watermelons</div>
+            </div>
+
+            <div class="productSlides fade">
+                <img src="slideshow/pineapples2.jpg" style="width:50%">
+                <div class="slideText">Pineapples</div>
+            </div>
+
+            <div class="productSlides fade">
+                <img src="slideshow/kiwis.jpg" style="width:50%">
+                <div class="slideText">Kiwis</div>
+            </div>
+
+            <div class="productSlides fade">
+                <img src="slideshow/oranges.jpg" style="width:50%">
+                <div class="slideText">Oranges</div>
+            </div>
+
+            <div class="productSlides fade">
+                <img src="slideshow/grapes.jpg" style="width:50%">
+                <div class="slideText">Grapes</div>
+            </div>
+
+            <div class="productSlides fade">
+                <img src="slideshow/strawberries.jpg" style="width:50%">
+                <div class="slideText">Strawberries</div>
+            </div>
+
+            <div class="productSlides fade">
+                <img src="slideshow/blueberries.jpg" style="width:50%">
+                <div class="slideText">Blueberries</div>
+            </div>
+
+            <div class="productSlides fade">
+                <img src="slideshow/lemons.jpg" style="width:50%">
+                <div class="slideText">Lemons</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+        </div>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span>
+            <span class="dot" onclick="currentSlide(10)"></span>
+            <span class="dot" onclick="currentSlide(11)"></span>
+            <span class="dot" onclick="currentSlide(12)"></span> 
+        </div>
+
+        <div class="shop" id="shop"></div>
+        
+    </body>
+    <script src="slide.js"></script>
+    <script type="text/javascript" src="data.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+</html>
